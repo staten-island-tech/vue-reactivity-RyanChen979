@@ -1,10 +1,10 @@
 <template>
   <div class="items">
-    <h2 v-for="list in computers">
-      Name: {{ list.name }} <br />
-      Price: ${{ list.price }}
-    </h2>
-    <img v-for="list in computers" :src="list.image" class="image" alt="" />
+    <div class="item" v-for="list in computers">
+      <h2>Name: {{ list.name }}</h2>
+      <h3>Price: ${{ list.price }}</h3>
+      <img :src="list.image" class="imgs" alt="" />
+    </div>
   </div>
 </template>
 
@@ -142,8 +142,24 @@ export default {
 </script>
 
 <style scoped>
-image {
-  height: 1rem;
-  width: auto;
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 20%;
+  margin: 1rem;
+  border: 2px black solid;
+  align-items: center;
+}
+
+.imgs {
+  width: 15rem;
 }
 </style>
