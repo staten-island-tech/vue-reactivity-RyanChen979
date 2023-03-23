@@ -8,7 +8,7 @@ defineProps({
 </script>
 
 <template>
-  <h2>What should this project be about? A shopping list?</h2>
+  <h2>Just some computers if ur interested. anyways</h2>
 </template>
 
 <style scoped></style>
