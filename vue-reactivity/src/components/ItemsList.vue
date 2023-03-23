@@ -1,10 +1,17 @@
 <template>
-  <div class="items">
-    <div class="item" v-for="list in computers">
-      <h2>Name: {{ list.name }}</h2>
-      <h3>Price: ${{ list.price }}</h3>
-      <img :src="list.image" alt="" />
-      <button type="submit">Details</button>
+  <div class="everything">
+    <div class="card" v-for="list in computers">
+      <div class="card-inner">
+        <div class="card-front">
+          <h2>Name: {{ list.name }}</h2>
+          <h3>Price: ${{ list.price }}</h3>
+          <img :src="list.image" alt="" />
+          <button type="submit">Details</button>
+        </div>
+        <div class="card-back">
+          <img :src="list.image" alt="" />
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -146,30 +153,63 @@ export default {
 </script>
 
 <style scoped>
-.items {
+.everything {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.item {
+.card {
+  background-color: transparent;
+  width: 20%;
+  height: 400px;
+  perspective: 1000px;
+  margin: 1.45rem;
+}
+
+.card-inner {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  width: 20%;
+
   margin: 1rem;
   border: 2px black solid;
-  justify-items: center;
-  align-items: center;
+
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+.card:hover .card-inner {
+  transform: rotateY(180deg);
 }
 
-.item img {
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 16px;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+.card-front img {
   object-fit: cover;
   border-radius: inherit;
   width: 15rem;
 }
+.card-front button {
+}
 
-.item button {
+.card-back img {
+  width: 15rem;
 }
 </style>
