@@ -5,7 +5,7 @@
         <div class="card-front">
           <h2>Name: {{ list.name }}</h2>
           <h3>Price: ${{ list.price }}</h3>
-          <img :src="list.image" alt="" />
+          <img :src="list.image" alt="" /><br />
           <button type="submit">Details</button>
         </div>
         <div class="card-back">
@@ -27,6 +27,11 @@ export default {
           category: "laptops",
           image:
             "https://www.notebookcheck.net/uploads/tx_nbc2/xps_13_plus_9320.jpg",
+          details: {
+            processor: "",
+            software: "",
+            memory: "",
+          },
         },
         {
           name: "Lenovo Slim 7",
@@ -163,7 +168,7 @@ export default {
 .card {
   background-color: transparent;
   width: 20%;
-  height: 400px;
+  height: 300px;
   perspective: 1000px;
   margin: 1.45rem;
 }

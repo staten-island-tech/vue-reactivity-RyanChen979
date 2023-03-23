@@ -9,10 +9,16 @@ AOS.init();
 <template>
   <header>
     <div class="wrapper">
+      <HelloWorld />
+
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/cart">Cart</RouterLink>
       </nav>
+      <form action="submit">
+        <input type="text" />
+        <input type="button" value="search" />
+      </form>
     </div>
   </header>
 
@@ -23,6 +29,10 @@ AOS.init();
 header {
   line-height: 1.5;
   max-height: 100vh;
+}
+
+.wrapper {
+  align-items: center;
 }
 
 nav {

@@ -1,11 +1,4 @@
-<script setup>
-defineProps({
-  msg: {
-    type: String,
-    required: true,
-  },
-});
-</script>
+<script setup></script>
 
 <template>
   <h2>Just some computers if ur interested. anyways</h2>
