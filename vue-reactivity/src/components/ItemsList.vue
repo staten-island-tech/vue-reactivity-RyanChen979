@@ -1,12 +1,12 @@
 <template>
   <div class="everything">
     <div class="card" v-for="list in computers" data-aos="zoom-out-up">
-      <h2>Name: {{ list.name }}</h2>
+      <h2>{{ list.name }}</h2>
       <h3>Price: ${{ list.price }}</h3>
       <img :src="list.image" :alt="list.name" /><br />
       <!-- <button type="submit">Details</button> -->
-      <div>
-        <h4 class="details">Details:</h4>
+      <div class="details">
+        <h4 id="details">Details:</h4>
         <p>Processor: {{ list.details.processor }}</p>
         <p>Ram: {{ list.details.memory }}</p>
         <p>Hard Drive: {{ list.details.harddrive }}</p>
@@ -270,6 +270,7 @@ export default {
   width: 20%;
   height: auto;
   margin: 1.45rem;
+  padding: 0.5rem;
   border: 2px black solid;
   text-align: center;
   align-items: center;
@@ -281,7 +282,7 @@ img {
   width: 15rem;
 }
 
-.details {
+#details {
   text-decoration: underline;
 }
 
