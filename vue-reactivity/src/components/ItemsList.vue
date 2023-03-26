@@ -4,7 +4,7 @@
       <h2>{{ list.name }}</h2>
       <h3>Price: ${{ list.price }}</h3>
       <img :src="list.image" :alt="list.name" /><br />
-      <!-- <button type="submit">Details</button> -->
+
       <div class="details">
         <h4 id="details">Details:</h4>
         <p>Processor: {{ list.details.processor }}</p>
@@ -12,6 +12,7 @@
         <p>Hard Drive: {{ list.details.harddrive }}</p>
         <p>Color: {{ list.details.color }}</p>
       </div>
+      <button class="add-to-cart" type="click">Add to Cart</button>
     </div>
   </div>
 </template>
@@ -70,21 +71,22 @@ export default {
           },
         },
         {
-          name: "MacBook Air",
-          price: 1199.0,
+          name: "MacBook Air M2",
+          price: 1599,
           image:
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo1ZAKTLP5A_guGxt05oUjilK8VzSk4z-UQQ&usqp=CAU",
+            "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/macbook-air-midnight-config-20220606?wid=410&hei=249&fmt=jpeg&qlt=95&.v=1654122880566",
           details: {
-            processor: "",
-            memory: "",
-            harddrive: "",
-            color: "",
+            processor: "Apple M2",
+            memory: "16 GB",
+            harddrive: "512 GB SSD",
+            color: "Midnight",
           },
         },
         {
-          name: "",
+          name: "Lenovo IdeaPad Flex",
           price: 0,
-          image: "",
+          image:
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoVJM1nAhmCIcML6OTvNatlZSCxEup9qwEj8SaWG-BkDfI8wbFFSNWxqTNjmyXc6v452w&usqp=CAU",
           details: {
             processor: "",
             memory: "",
@@ -286,7 +288,7 @@ img {
   text-decoration: underline;
 }
 
-ul {
-  width: 80%;
+.add-to-cart {
+  margin-top: 1rem;
 }
 </style>
