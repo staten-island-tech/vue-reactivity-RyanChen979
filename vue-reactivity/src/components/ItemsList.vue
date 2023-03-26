@@ -25,49 +25,48 @@ export default {
           name: "Dell XPS 13 Plus 9320",
           price: 1499.0,
           image:
-            "https://www.notebookcheck.net/uploads/tx_nbc2/xps_13_plus_9320.jpg",
+            "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/xps-13-9320/media-gallery/xs9320t-cnb-00005ff090-sl-oled.psd?fmt=png-alpha&pscan=auto&scl=1&hei=402&wid=628&qlt=100,1&resMode=sharp2&size=628,402&chrss=full",
           details: {
-            processor:
-              "12th Gen Intel Core i7 1260P (16 threads, 4.70 GHz Turbo)",
-            memory: "16GB LPDDR5, 5200 MHz, integrated, dual channel",
-            harddrive: "1TB, M.2, Gen 4 PCle NVMe, SSD",
-            color: "platinum",
+            processor: "12th Gen Intel Core i7 1260P",
+            memory: "16GB LPDDR5",
+            harddrive: "1 TB SSD",
+            color: "Platinum",
           },
         },
         {
-          name: "Lenovo Slim 7",
-          price: 873.99,
+          name: "Lenovo Slim 7i",
+          price: 1639.99,
           image:
-            "https://p4-ofp.static.pub/ShareResource/na/subseries/gallery/lenovo-slim-7i-14inch-01.png",
+            "https://p1-ofp.static.pub/medias/24268996282_82VA_202205301038021660044262642.png",
           details: {
-            processor: "",
-            memory: "",
-            harddrive: "",
-            color: "",
+            processor: "12th Gen Intel Core i7-1065G7",
+            memory: "16 GB LPDDR5",
+            harddrive: "1 TB SSD",
+            color: "Light Silver",
           },
         },
         {
           name: "Dell G15",
-          price: 1099.99,
+          price: 1399.99,
           image:
-            "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/g-series/g15-5525/pdp/laptop-g-series-15-5525-pdp-hero-bk-coralkb.psd?qlt=95&fit=constrain,1&hei=349&wid=504&fmt=jpg&wid=570&hei=400",
+            "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/g-series/g15-5525/media-gallery/g15-5525-bk-coralkb/notebook-g-15-5525-black-coralkb-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=402&wid=457&qlt=100,1&resMode=sharp2&size=457,402&chrss=full",
           details: {
-            processor: "",
-            memory: "",
-            harddrive: "",
-            color: "",
+            processor: "AMD Ryzen 7 6800H",
+            memory: "16 GB DDR4",
+            harddrive: "1 TB SSD",
+            color: "Dark Shadow Grey",
           },
         },
         {
           name: "HP Victus 15 (2022)",
-          price: 549.99,
+          price: 799.99,
           image:
-            "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/61ZRgmj+NqL.jpg",
+            "https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c08186082.png",
           details: {
-            processor: "",
-            memory: "",
-            harddrive: "",
-            color: "",
+            processor: "Intel Core i5",
+            memory: "8 GB DDR4",
+            harddrive: "256 GB SSD",
+            color: "Mica Silver",
           },
         },
         {
@@ -279,7 +278,8 @@ export default {
 img {
   object-fit: cover;
   border-radius: inherit;
-  width: 15rem;
+  height: 10rem;
+  width: auto;
 }
 
 #details {
