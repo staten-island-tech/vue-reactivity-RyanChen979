@@ -1,6 +1,7 @@
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
 import HelloWorld from "./components/HelloWorld.vue";
+import { cart } from "./cart";
 import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
@@ -13,12 +14,8 @@ AOS.init();
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/cart">Cart</RouterLink>
+        <RouterLink to="/cart">Cart </RouterLink>
       </nav>
-      <form action="submit">
-        <input type="text" />
-        <input type="button" value="search" />
-      </form>
     </div>
   </header>
 
