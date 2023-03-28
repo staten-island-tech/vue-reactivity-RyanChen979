@@ -211,6 +211,12 @@ export default {
       ],
     };
   },
+  methods: {
+    cartList: [],
+    Cart: function () {
+      document.button.addEventListener("click");
+    },
+  },
 };
 </script>
 

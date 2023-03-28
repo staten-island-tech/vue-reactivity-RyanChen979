@@ -1,1 +1,3 @@
-export function cart() {}
+export function cart() {
+  document.button.addeventListener();
+}
