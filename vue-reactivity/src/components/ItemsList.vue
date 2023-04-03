@@ -1,5 +1,5 @@
 <template>
-  <div class="card" data-aos="zoom-out-up">
+  <div class="card">
     <h2>{{ title }}</h2>
     <h3>Price: ${{ price }}</h3>
     <img :src="image" :alt="name" /><br />

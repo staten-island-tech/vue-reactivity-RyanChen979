@@ -1,10 +1,6 @@
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
-import HelloWorld from "./components/HelloWorld.vue";
-import { cart } from "./cart";
-import AOS from "aos";
-import "aos/dist/aos.css";
-AOS.init();
+import HelloWorld from "./components/TitleName.vue";
 </script>
 
 <template>
@@ -13,8 +9,8 @@ AOS.init();
       <HelloWorld />
 
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/cart">Cart </RouterLink>
+        <RouterLink to="/">Shop</RouterLink>
+        <RouterLink to="/cart">Cart</RouterLink>
       </nav>
     </div>
   </header>
