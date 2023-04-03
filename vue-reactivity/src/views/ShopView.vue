@@ -1,6 +1,6 @@
 <script setup>
 import Card from "../components/ItemsList.vue";
-import { computers } from "./ItemsList.js";
+import { computers } from "../ItemsList";
 </script>
 
 <template>

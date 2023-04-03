@@ -11,7 +11,7 @@
       <p>Hard Drive: {{ harddrive }}</p>
       <p>Color: {{ color }}</p>
     </div>
-    <button class="button" type="click">Add to Cart</button>
+    <button @click="addToCart" class="button" type="click">Add to Cart</button>
   </div>
 </template>
 
@@ -27,12 +27,13 @@ export default {
     harddrive: String,
     color: String,
   },
-  // methods: {
-  //   cartList: [],
-  //   Cart: function () {
-  //     document.button.addEventListener("click");
-  //   },
-  // },
+  methods: {
+    cartList: [],
+    addToCart: function () {
+      // this.cartList.push();
+      console.log(this.cartList);
+    },
+  },
 };
 </script>
 
