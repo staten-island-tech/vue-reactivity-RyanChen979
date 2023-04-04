@@ -27,11 +27,17 @@ export default {
     harddrive: String,
     color: String,
   },
+  data() {
+    return {
+      cartList: [],
+    };
+  },
   methods: {
-    cartList: [],
     addToCart: function () {
-      // this.cartList.push();
-      console.log(this.cartList);
+      this.cartList.push(event.target.parentElement);
+      // event.target.parentElement.textContent
+      // console.log(this.cartList);
+      console.log(poop);
     },
   },
 };

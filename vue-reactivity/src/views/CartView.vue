@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>theres literally nothing here. why tf u still reading smh</h1>
+    <h1>theres literally nothing here</h1>
   </div>
 </template>
 
