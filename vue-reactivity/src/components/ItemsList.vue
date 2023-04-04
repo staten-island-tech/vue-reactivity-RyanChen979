@@ -16,6 +16,7 @@
 </template>
 
 <script>
+import { cartList } from "../cartList.js";
 export default {
   name: "Card",
   props: {
@@ -29,15 +30,13 @@ export default {
   },
   data() {
     return {
-      cartList: [],
+      cartList,
     };
   },
   methods: {
     addToCart: function () {
       this.cartList.push(event.target.parentElement);
-      // event.target.parentElement.textContent
-      // console.log(this.cartList);
-      console.log(poop);
+      console.log(this.cartList);
     },
   },
 };
