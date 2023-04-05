@@ -1,1 +1,5 @@
-export const cartList = [];
+import { reactive } from "vue";
+
+export const cartList = reactive({
+  list: [],
+});

@@ -28,15 +28,14 @@ export default {
     harddrive: String,
     color: String,
   },
-  data() {
-    return {
-      cartList,
-    };
-  },
   methods: {
     addToCart: function () {
-      this.cartList.push(event.target.parentElement);
-      console.log(this.cartList);
+      cartList.list.push(
+        (name = this.title),
+        (price = this.price),
+        (img = this.image),
+        (processor = this.processor)
+      );
     },
   },
 };
