@@ -1,9 +1,13 @@
 <script setup></script>
 
 <template>
-  <h2>
+  <h1>
     Decent Buy | Unofficial Online Store | Shop Now & Never Expect Your Order
-  </h2>
+  </h1>
 </template>
 
-<style scoped></style>
+<style scoped>
+h1 {
+  color: ;
+}
+</style>

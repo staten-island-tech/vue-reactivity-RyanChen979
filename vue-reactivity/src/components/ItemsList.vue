@@ -51,9 +51,10 @@ export default {
   height: auto;
   margin: 1.45rem;
   padding: 0.5rem;
-  border: 2px black solid;
+  border: 2px #3a3a93 solid;
   text-align: center;
   align-items: center;
+  background-color: #3a3a93;
 }
 
 img {
