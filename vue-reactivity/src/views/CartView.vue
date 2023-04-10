@@ -6,7 +6,7 @@ import { cartList } from "../cartList.js";
 <template>
   <main class="card">
     <Card
-      v-for="computer in cartList.list"
+      v-for="computer in cartList"
       :name="computer.name"
       :price="computer.price"
       :image="computer.image"

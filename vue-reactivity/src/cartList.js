@@ -1,5 +1,3 @@
 import { reactive } from "vue";
 
-export const cartList = reactive({
-  list: [],
-});
+export const cartList = reactive([]);

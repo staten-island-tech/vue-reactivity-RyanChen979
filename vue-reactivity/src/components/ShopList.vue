@@ -30,7 +30,7 @@ export default {
   },
   methods: {
     addToCart: function () {
-      cartList.list.push({
+      cartList.push({
         name: this.name,
         price: this.price,
         image: this.image,
