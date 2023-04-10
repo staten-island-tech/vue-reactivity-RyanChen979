@@ -1,5 +1,3 @@
-<script setup></script>
-
 <template>
   <h1>
     Decent Buy | Unofficial Online Store | Shop Now & Never Expect Your Order

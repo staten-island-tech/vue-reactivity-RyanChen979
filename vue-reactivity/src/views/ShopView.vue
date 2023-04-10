@@ -1,5 +1,5 @@
 <script setup>
-import Card from "../components/ItemsList.vue";
+import Card from "../components/ShopList.vue";
 import { computers } from "../ItemsList";
 </script>
 

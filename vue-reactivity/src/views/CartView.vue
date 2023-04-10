@@ -1,11 +1,28 @@
 <script setup>
+import Card from "../components/CartList.vue";
 import { cartList } from "../cartList.js";
 </script>
 
 <template>
-  <div>
-    <h1>theres literally nothing here</h1>
-  </div>
+  <main class="card">
+    <Card
+      v-for="computer in cartList.list"
+      :name="computer.name"
+      :price="computer.price"
+      :image="computer.image"
+      :processor="computer.processor"
+      :memory="computer.memory"
+      :harddrive="computer.harddrive"
+      :color="computer.color"
+    />
+  </main>
 </template>
 
-<style></style>
+<style>
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+</style>
