@@ -1,6 +1,6 @@
 <template>
   <div class="card">
-    <h2>{{ title }}</h2>
+    <h2>{{ name }}</h2>
     <h3>Price: ${{ price }}</h3>
     <img :src="image" :alt="name" /><br />
 
@@ -20,7 +20,7 @@ import { cartList } from "../cartList.js";
 export default {
   name: "Card",
   props: {
-    title: String,
+    name: String,
     price: Number,
     image: String,
     processor: String,
@@ -30,12 +30,16 @@ export default {
   },
   methods: {
     addToCart: function () {
-      cartList.list.push(
-        (name = this.title),
-        (price = this.price),
-        (img = this.image),
-        (processor = this.processor)
-      );
+      cartList.list.push({
+        name: this.name,
+        price: this.price,
+        image: this.image,
+        processor: this.processor,
+        memory: this.memory,
+        harddrive: this.harddrive,
+        color: this.color,
+      });
+      console.log(cartList.list);
     },
   },
 };

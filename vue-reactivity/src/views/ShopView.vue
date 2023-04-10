@@ -7,7 +7,7 @@ import { computers } from "../ItemsList";
   <main class="card">
     <Card
       v-for="computer in computers"
-      :title="computer.name"
+      :name="computer.name"
       :price="computer.price"
       :image="computer.image"
       :processor="computer.processor"
