@@ -1,4 +1,4 @@
-<script>
+<script setup>
 import { cartList } from "../cartList.js";
 </script>
 
