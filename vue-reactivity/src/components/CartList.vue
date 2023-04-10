@@ -31,7 +31,8 @@ export default {
   },
   methods: {
     removeFromCart: function () {
-      console.log(cartList.list);
+      event.target.parentElement.remove();
+      //console.log(cartList.list);
     },
   },
 };
