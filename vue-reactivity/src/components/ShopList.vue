@@ -2,7 +2,12 @@
   <div class="card">
     <h2>{{ name }}</h2>
     <h3>Price: ${{ price }}</h3>
-    <img :src="image" :alt="name" /><br />
+
+    <div class="image">
+      <img :src="image" :alt="name" />
+    </div>
+
+    <br />
 
     <div class="details">
       <h4 id="details">Details:</h4>
@@ -55,7 +60,7 @@ export default {
   flex-direction: column;
   justify-content: flex-start;
   width: 20%;
-  height: auto;
+  height: fit-content;
   margin: 1.45rem;
   padding: 0.5rem;
   border: 2px #3a3a93 solid;
@@ -64,11 +69,13 @@ export default {
   background-color: #3a3a93;
 }
 
-img {
-  object-fit: cover;
-  border-radius: inherit;
-  height: 10rem;
-  width: auto;
+.image img {
+  width: 100%;
+  height: 100%;
+}
+
+.image img {
+  object-fit: contain;
 }
 
 #details {

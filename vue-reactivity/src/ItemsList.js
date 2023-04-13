@@ -14,7 +14,7 @@ export const computers = [
     name: "Lenovo Slim 7i",
     price: 1639,
     image:
-      "https://p1-ofp.static.pub/medias/24268996282_82VA_202205301038021660044262642.png",
+      "https://p3-ofp.static.pub/fes/cms/2022/05/06/bwjzqfe5hwtrcbjgd7u717s4guqwux682930.png",
     processor: "Intel Core i7-1065G7 (12th Gen)",
     memory: "16 GB LPDDR5",
     harddrive: "1 TB SSD",
@@ -44,7 +44,7 @@ export const computers = [
     name: "MacBook Air M2",
     price: 1599,
     image:
-      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/macbook-air-midnight-config-20220606?wid=410&hei=249&fmt=jpeg&qlt=95&.v=1654122880566",
+      "https://images.macrumors.com/t/AI0UfpE0Io0I3yfew8TtFUxyi3s=/800x0/smart/article-new/2013/09/macbook-air-m2-roundup-header.png?lossy",
     processor: "Apple M2",
     memory: "16 GB",
     harddrive: "512 GB SSD",
@@ -54,7 +54,7 @@ export const computers = [
     name: "Lenovo IdeaPad Flex",
     price: 749,
     image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoVJM1nAhmCIcML6OTvNatlZSCxEup9qwEj8SaWG-BkDfI8wbFFSNWxqTNjmyXc6v452w&usqp=CAU",
+      "https://p3-ofp.static.pub/ShareResource/na/products/ideapad/560x450/lenovo-ideapad-flex-5i-16-intel-storm-grey.png",
     processor: "AMD Ryzen 5 5500U",
     memory: "8 GB LPDDR4X",
     harddrive: "256 GB SSD",
@@ -124,7 +124,7 @@ export const computers = [
     name: "Lenovo Yoga 7i",
     price: 1199,
     image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4aPpoGulhFxgYiyXDZvI5CI5lTxtRJRWUD7pQFmbi7c4xgmB_AAQG4uLinCCPBMXLtbA&usqp=CAU",
+      "https://abubazzar.com/wp-content/uploads/2022/09/lut5zozhdxeaaehob0rdfmw4bq28fu705470.webp",
     processor: "Intel Core i7-1255U (12th Gen)",
     memory: "16 GB",
     harddrive: "512 GB SSD",
