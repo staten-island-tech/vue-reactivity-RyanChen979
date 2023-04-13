@@ -17,6 +17,7 @@
 
 <script>
 import { cartList } from "../cartList.js";
+import { Price } from "../totalPrice";
 export default {
   name: "Card",
   props: {
@@ -40,6 +41,8 @@ export default {
         color: this.color,
       });
       console.log(cartList);
+      let totalPrice = (Price.totalPrice += this.price);
+      console.log(totalPrice);
     },
   },
 };

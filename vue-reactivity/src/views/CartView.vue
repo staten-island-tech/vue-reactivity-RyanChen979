@@ -1,9 +1,11 @@
 <script setup>
 import Card from "../components/CartList.vue";
 import { cartList } from "../cartList.js";
+import { Price } from "../totalPrice";
 </script>
 
 <template>
+  <h3>Total Price: ${{ Price.totalPrice }}</h3>
   <main class="card">
     <Card
       v-for="computer in cartList"

@@ -18,7 +18,8 @@
 </template>
 
 <script>
-import { cartList } from "../cartList.js";
+import { cartList } from "../cartList";
+import { Price } from "../totalPrice";
 export default {
   name: "Card",
   props: {
@@ -29,11 +30,15 @@ export default {
     memory: String,
     harddrive: String,
     color: String,
+    totalPrice: Number,
   },
   methods: {
-    removeFromCart: function () {
+    removeFromCart: function (index) {
+      cartList.splice(index, 1);
       event.target.parentElement.remove();
-      //console.log(cartList.list);
+      let newPrice = ((Price.totalPrice -= this.price));
+      console.log(cartList);
+      console.log(newPrice);
     },
   },
 };

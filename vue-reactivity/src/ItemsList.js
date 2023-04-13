@@ -1,7 +1,7 @@
 export const computers = [
   {
     name: "Dell XPS 13 Plus 9320",
-    price: 1499.0,
+    price: 1499,
     image:
       "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/xps-13-9320/media-gallery/xs9320t-cnb-00005ff090-sl-oled.psd?fmt=png-alpha&pscan=auto&scl=1&hei=402&wid=628&qlt=100,1&resMode=sharp2&size=628,402&chrss=full",
 
@@ -12,7 +12,7 @@ export const computers = [
   },
   {
     name: "Lenovo Slim 7i",
-    price: 1639.99,
+    price: 1639,
     image:
       "https://p1-ofp.static.pub/medias/24268996282_82VA_202205301038021660044262642.png",
     processor: "Intel Core i7-1065G7 (12th Gen)",
@@ -22,7 +22,7 @@ export const computers = [
   },
   {
     name: "Dell G15",
-    price: 1399.99,
+    price: 1399,
     image:
       "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/g-series/g15-5525/media-gallery/g15-5525-bk-coralkb/notebook-g-15-5525-black-coralkb-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=402&wid=457&qlt=100,1&resMode=sharp2&size=457,402&chrss=full",
     processor: "AMD Ryzen 7 6800H",
@@ -32,7 +32,7 @@ export const computers = [
   },
   {
     name: "HP Victus 15 (2022)",
-    price: 799.99,
+    price: 799,
     image:
       "https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c08186082.png",
     processor: "Intel Core i5",
@@ -52,7 +52,7 @@ export const computers = [
   },
   {
     name: "Lenovo IdeaPad Flex",
-    price: 749.99,
+    price: 749,
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoVJM1nAhmCIcML6OTvNatlZSCxEup9qwEj8SaWG-BkDfI8wbFFSNWxqTNjmyXc6v452w&usqp=CAU",
     processor: "AMD Ryzen 5 5500U",
@@ -62,7 +62,7 @@ export const computers = [
   },
   {
     name: "ASUS ROG Strix SCAR 16",
-    price: 3699.99,
+    price: 3699,
     image:
       "https://cdn.shopify.com/s/files/1/0228/7629/1136/products/02_SCAR_16_L_2afecb5b-839b-4b8a-8eba-235659e389be_2000x.png?v=1674747492",
     processor: "Intel Core i9-13980HX",
@@ -72,7 +72,7 @@ export const computers = [
   },
   {
     name: "Acer Swift 5",
-    price: 799.99,
+    price: 799,
     image:
       "https://images.acer.com/is/image/acer/Swift-5_SF514-55TA_Fp-Backliton_Misty-Green_01a-1?$Product-Cards-XL$",
     processor: "Intel Core i7 1165G7 (11th Gen)",
@@ -92,7 +92,7 @@ export const computers = [
   },
   {
     name: "HP ENVY 13",
-    price: 1169.99,
+    price: 1169,
     image:
       "https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c08226080.png?imdensity=1&imwidth=175",
     processor: "Intel Core i7-1250U",
@@ -122,7 +122,7 @@ export const computers = [
   },
   {
     name: "Lenovo Yoga 7i",
-    price: 1199.99,
+    price: 1199,
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4aPpoGulhFxgYiyXDZvI5CI5lTxtRJRWUD7pQFmbi7c4xgmB_AAQG4uLinCCPBMXLtbA&usqp=CAU",
     processor: "Intel Core i7-1255U (12th Gen)",
@@ -132,7 +132,7 @@ export const computers = [
   },
   {
     name: "HP Laptop 17-cn3097nr",
-    price: 919.99,
+    price: 919,
     image:
       "https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c08505286.png",
     processor: "Intel Core i7-1355U (13th Gen)",
@@ -142,7 +142,7 @@ export const computers = [
   },
   {
     name: "Asus ROG Strix Scar 18 (2023)",
-    price: 3899.99,
+    price: 3899,
     image:
       "https://dlcdnwebimgs.asus.com/gain/77387050-5133-4282-93AC-656739026015/w250",
     processor: "Intel Core i9-13980HX (13th Gen)",
@@ -152,7 +152,7 @@ export const computers = [
   },
   {
     name: "Samsung Galaxy Book 2 Pro",
-    price: 1204.99,
+    price: 1204,
     image:
       "https://image-us.samsung.com/SamsungUS/home/computing/galaxybooks/472022/pro/Gallery_Images_Venus2_13_WIFI_US_Graphite_001_Front_RGB.jpg",
     processor: "Intel Core i7",
