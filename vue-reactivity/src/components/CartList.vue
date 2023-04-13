@@ -18,6 +18,7 @@
 </template>
 
 <script>
+import { cartList } from "../cartList.js";
 export default {
   name: "Card",
   props: {

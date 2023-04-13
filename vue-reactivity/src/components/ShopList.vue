@@ -39,7 +39,7 @@ export default {
         harddrive: this.harddrive,
         color: this.color,
       });
-      //console.log(cartList.list);
+      console.log(cartList);
     },
   },
 };
