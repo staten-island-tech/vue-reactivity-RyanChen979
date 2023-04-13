@@ -35,8 +35,7 @@ export default {
   methods: {
     removeFromCart: function (index) {
       cartList.splice(index, 1);
-      event.target.parentElement.remove();
-      let newPrice = ((Price.totalPrice -= this.price));
+      let newPrice = (Price.totalPrice -= this.price);
       console.log(cartList);
       console.log(newPrice);
     },
