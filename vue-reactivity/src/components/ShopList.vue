@@ -40,9 +40,9 @@ export default {
         harddrive: this.harddrive,
         color: this.color,
       });
-      console.log(cartList);
+      //console.log(cartList);
       let totalPrice = (Price.totalPrice += this.price);
-      console.log(totalPrice);
+      //console.log(totalPrice);
     },
   },
 };

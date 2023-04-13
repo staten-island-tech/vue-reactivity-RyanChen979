@@ -36,8 +36,8 @@ export default {
     removeFromCart: function (index) {
       cartList.splice(index, 1);
       let newPrice = (Price.totalPrice -= this.price);
-      console.log(cartList);
-      console.log(newPrice);
+      //console.log(cartList);
+      //console.log(newPrice);
     },
   },
 };
