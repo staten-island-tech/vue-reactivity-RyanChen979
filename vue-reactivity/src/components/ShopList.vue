@@ -110,35 +110,26 @@ export default {
   white-space: nowrap;
   word-wrap: break-word;
 }
-
 .button:hover {
   background-color: #f3f4f6;
   text-decoration: none;
   transition-duration: 0.1s;
 }
-
 .button:disabled {
   background-color: #fafbfc;
   border-color: rgba(27, 31, 35, 0.15);
   color: #959da5;
   cursor: default;
 }
-
 .button:active {
   background-color: #edeff2;
   box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
   transition: none 0s;
 }
-
 .button:focus {
   outline: 1px transparent;
 }
-
 .button:before {
-  display: none;
-}
-
-.button-4:-webkit-details-marker {
   display: none;
 }
 </style>
