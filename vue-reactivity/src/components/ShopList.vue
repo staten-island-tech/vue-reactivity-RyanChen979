@@ -60,7 +60,7 @@ export default {
   width: 20%;
   height: fit-content;
   margin: 1.45rem;
-  padding: 0.5rem;
+  padding: 1.25rem;
   border: 2px #3a3a93 solid;
   text-align: center;
   align-items: center;

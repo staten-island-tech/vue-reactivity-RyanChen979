@@ -16,7 +16,9 @@ import { cartList } from "./cartList";
           <RouterLink to="/cart">🛒({{ cartList.length }})</RouterLink>
         </nav>
 
-        <h3>Total Price: ${{ Price.totalPrice }}</h3>
+        <div class="price-display">
+          <h3>Total Price: ${{ Price.totalPrice }}</h3>
+        </div>
       </div>
     </div>
   </header>
@@ -30,7 +32,7 @@ header {
   z-index: 1;
   top: 0;
   background-color: #221e32;
-  padding-top: 5rem;
+  padding-top: 3rem;
   width: 100%;
 }
 
@@ -46,11 +48,15 @@ header {
 nav {
   text-align: center;
   text-align: left;
+  margin-left: 2rem;
 }
-
 nav a {
   display: inline-block;
-  padding: 0 1rem;
+  padding-right: 2rem;
   border-left: 1px solid var(--color-border);
+}
+
+.price-display {
+  margin-right: 2rem;
 }
 </style>
