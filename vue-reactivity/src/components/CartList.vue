@@ -1,22 +1,3 @@
-<template>
-  <div class="card">
-    <h2>{{ name }}</h2>
-    <h3>Price: ${{ price }}</h3>
-    <img :src="image" :alt="name" /><br />
-
-    <div class="details">
-      <h4 id="details">Details:</h4>
-      <p>Processor: {{ processor }}</p>
-      <p>Ram: {{ memory }}</p>
-      <p>Hard Drive: {{ harddrive }}</p>
-      <p>Color: {{ color }}</p>
-    </div>
-    <button @click="removeFromCart" class="button" type="click">
-      Remove from Cart
-    </button>
-  </div>
-</template>
-
 <script>
 import { cartList } from "../cartList";
 import { Price } from "../totalPrice";
@@ -36,12 +17,29 @@ export default {
     removeFromCart: function (index) {
       cartList.splice(index, 1);
       let newPrice = (Price.totalPrice -= this.price);
-      //console.log(cartList);
-      //console.log(newPrice);
     },
   },
 };
 </script>
+
+<template>
+  <div class="card">
+    <h2>{{ name }}</h2>
+    <h3>Price: ${{ price }}</h3>
+    <img :src="image" :alt="name" /><br />
+
+    <div class="details">
+      <h4 id="details">Details:</h4>
+      <p>Processor: {{ processor }}</p>
+      <p>Ram: {{ memory }}</p>
+      <p>Hard Drive: {{ harddrive }}</p>
+      <p>Color: {{ color }}</p>
+    </div>
+    <button @click="removeFromCart" class="button" type="click">
+      Remove from Cart
+    </button>
+  </div>
+</template>
 
 <style scoped>
 .card {

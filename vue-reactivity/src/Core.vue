@@ -1,17 +1,23 @@
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
-import HelloWorld from "./components/TitleName.vue";
+import TitleName from "./components/TitleName.vue";
+import { Price } from "./totalPrice";
+import { cartList } from "./cartList";
 </script>
 
 <template>
   <header>
     <div class="wrapper">
-      <HelloWorld />
+      <TitleName />
 
-      <nav>
-        <RouterLink to="/">Shop</RouterLink>
-        <RouterLink to="/cart">🛒</RouterLink>
-      </nav>
+      <div class="row">
+        <nav>
+          <RouterLink to="/">Shop</RouterLink>
+          <RouterLink to="/cart">🛒({{ cartList.length }})</RouterLink>
+        </nav>
+
+        <h3>Total Price: ${{ Price.totalPrice }}</h3>
+      </div>
     </div>
   </header>
 
@@ -20,51 +26,31 @@ import HelloWorld from "./components/TitleName.vue";
 
 <style scoped>
 header {
-  line-height: 1.5;
-  max-height: 100vh;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  background-color: #221e32;
+  padding-top: 5rem;
+  width: 100%;
 }
 
-.wrapper {
-  align-items: center;
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  font-size: 24px;
 }
 
 nav {
-  width: 100%;
-  font-size: 12px;
   text-align: center;
-  margin-top: 2rem;
+  text-align: left;
 }
 
 nav a {
   display: inline-block;
   padding: 0 1rem;
   border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
 }
 </style>

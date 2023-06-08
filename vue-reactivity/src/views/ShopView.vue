@@ -20,6 +20,7 @@ import { computers } from "../ItemsList";
 
 <style>
 .card {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;

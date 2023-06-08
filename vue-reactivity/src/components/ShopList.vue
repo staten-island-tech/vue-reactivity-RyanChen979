@@ -1,25 +1,3 @@
-<template>
-  <div class="card">
-    <h2>{{ name }}</h2>
-    <h3>Price: ${{ price }}</h3>
-
-    <div class="image">
-      <img :src="image" :alt="name" />
-    </div>
-
-    <br />
-
-    <div class="details">
-      <h4 id="details">Details:</h4>
-      <p>Processor: {{ processor }}</p>
-      <p>Ram: {{ memory }}</p>
-      <p>Hard Drive: {{ harddrive }}</p>
-      <p>Color: {{ color }}</p>
-    </div>
-    <button @click="addToCart" class="button" type="click">Add to Cart</button>
-  </div>
-</template>
-
 <script>
 import { cartList } from "../cartList.js";
 import { Price } from "../totalPrice";
@@ -45,13 +23,33 @@ export default {
         harddrive: this.harddrive,
         color: this.color,
       });
-      //console.log(cartList);
       let totalPrice = (Price.totalPrice += this.price);
-      //console.log(totalPrice);
     },
   },
 };
 </script>
+
+<template>
+  <div class="card">
+    <h2>{{ name }}</h2>
+    <h3>Price: ${{ price }}</h3>
+
+    <div class="image">
+      <img :src="image" :alt="name" />
+    </div>
+
+    <br />
+
+    <div class="details">
+      <h4 id="details">DETAILS:</h4>
+      <p>PROCESSOR: {{ processor }}</p>
+      <p>RAM: {{ memory }}</p>
+      <p>HARD DRIVE: {{ harddrive }}</p>
+      <p>COLOR: {{ color }}</p>
+    </div>
+    <button @click="addToCart" class="button" type="click">Add to Cart</button>
+  </div>
+</template>
 
 <style scoped>
 .card {
@@ -72,9 +70,6 @@ export default {
 .image img {
   width: 100%;
   height: 100%;
-}
-
-.image img {
   object-fit: contain;
 }
 
